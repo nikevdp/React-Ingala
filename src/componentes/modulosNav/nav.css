@@ -1,8 +1,11 @@
-nav{
-    border: 1px solid red;
+.nave{
+    border-bottom: 1px solid red;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between !important;
+    align-items: center;
     width: 100%;
+    padding: 0px 10px 0px 10px;
+    color: white;
 }
 ul{
     display: flex;
@@ -10,4 +13,5 @@ ul{
 }
 ul li{
     margin: 20px;
+    color: rgb(212, 196, 196);
 }
