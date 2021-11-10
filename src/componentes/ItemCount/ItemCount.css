@@ -1,0 +1,12 @@
+.contador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contador p{
+    margin: 0rem 1rem 0rem 0rem !important
+}
+.ItemCount{
+    display: flex;
+    flex-direction: column;
+}
