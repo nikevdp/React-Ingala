@@ -1,25 +1,16 @@
-import { Card } from 'react-bootstrap';
-import { Button } from 'react-bootstrap';
-import {ItemCount} from "./../ItemCount/ItemCount.js"
-import "./ItemList.css"
-import img from ".././imagenes/papasjpg.jpg"
+import React from 'react';
+import { Container} from 'react-bootstrap';
+import { Item } from '../Item/Item.js';
 
-const ItemList = ({ producto, precio }) => {
+export const ItemList = ({ productos }) => {
 
     return (
-
-        <Card className="productos" style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={img} />
-            <Card.Body>
-                <Card.Title>{producto}</Card.Title>
-                <Card.Text>
-                    {precio}
-                </Card.Text>
-                <ItemCount/>
-                <Button variant="primary">Comprar</Button>
-            </Card.Body>
-        </Card>
-
+        <Container className="my-5" >
+            <div>
+                {productos.map((produ) => (
+                   <Item produ={produ} />
+                ))}
+            </div>
+        </Container>
     )
 }
-export default ItemList
